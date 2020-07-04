@@ -1,0 +1,4 @@
+backend/api/__pycache__
+backend/api/data/key.txt
+frontend/node_modules/
+.idea/

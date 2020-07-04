@@ -1,0 +1,6 @@
+Flask
+Flask-Cors
+Flask-SQLAlchemy
+flask-marshmallow
+marshmallow-SQLAlchemy
+yahoo_finance_api2

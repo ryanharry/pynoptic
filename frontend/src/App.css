@@ -1,0 +1,234 @@
+.app-grid {
+  display: grid;
+  grid-gap: 2px;
+  background-color: #282828;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'fantasy';
+  color: #A0A0A0;
+  min-height: 0;
+  min-width: 0;
+}
+
+.app-grid > div {
+  background-color: #282828;
+  padding: 0;
+  min-height: 0;
+  min-width: 0;
+}
+
+.weather {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  min-height: 0;
+  min-width: 0;
+}
+
+.date {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  min-height: 0;
+  min-width: 0;
+}
+
+.time {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  min-height: 0;
+  min-width: 0;
+}
+
+.stocks {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  min-height: 0;
+  min-width: 0;
+}
+
+.tracker-header {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  padding-top: 10px;
+  font-size: 8vh;
+  font-weight: bold;
+  text-align: center;
+  min-height: 0;
+  min-width: 0;
+}
+
+.tracker {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  overflow-y: auto;
+  min-height: 0;
+  min-width: 0;
+}
+
+.single-input {
+  width: 100%;
+  -webkit-appearance: none;
+  border: 1px solid black;
+  background-color: #282828;
+  padding: 5px 0px;
+  font-size: 15px;
+  margin: 0px 0px 5px 0px;
+}
+
+.submit-button {
+  -webkit-appearance: none;
+  border: 1px solid black;
+  background-color: #ffffff;
+  padding: 5px 0px;
+  font-size: 40px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.submit-button:hover {
+    background-color: #dfecdf;
+}
+
+.date-display {
+  font-size: 5vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+.time-display {
+  display: block;
+  text-align: center;
+  font-size: 12vw;
+  font-weight: bold;
+}
+
+.temperature-display {
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.weather-display {
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+* { box-sizing: border-box; }
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.stock-ticker {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stock-price {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stock-change {
+  text-align: center;
+}
+
+.ticker-container {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.ticker-wrap {
+  width: 100%;
+  padding-left: 100%;
+  box-sizing: content-box;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.ticker-wrap.ticker {
+  display: inline-block;
+  height: 100%;
+  line-height: 100%;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  -webkit-animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 25s;
+  min-height: 0;
+  min-width: 0;
+}
+
+.ticker-wrap.ticker.item {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+.stock-item {
+  display: inline-block;
+  padding-right: 5%;
+}
+
+.tracker-item {
+  width: 100%;
+  text-align: center;
+}
+
+.tracker-container {
+  overflow-y: scroll;
+}
+
+.submit-tracker {
+  -webkit-appearance: none;
+  border: 1px solid #282828;
+  background-color: #282828;
+  color: #A9A9A9;
+  font-size: 8vh;
+  width: 30vw;
+  height: 25vh;
+}
+
+.submit-tracker:hover {
+  background-color: #80b380;
+  color: #282828;
+}
+
+.submit-tracker-complete {
+  -webkit-appearance: none;
+  border: 1px solid #282828;
+  background-color: #282828;
+  color: #80b380;
+  font-size: 8vh;
+  width: 30vw;
+  height: 25vh;
+}
